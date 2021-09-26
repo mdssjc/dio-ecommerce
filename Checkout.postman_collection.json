@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "3a7faea8-4973-4c2b-bcdc-e8c83ddb8644",
+		"name": "Checkout",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Marcelo\",\r\n    \"lastName\": \"dos Santos\",\r\n    \"email\": \"mds@sjc.com.br\",\r\n    \"address\": \"rua ABC\",\r\n    \"complement\": \"---\",\r\n    \"country\": \"Brasil\",\r\n    \"state\": \"São Paulo\",\r\n    \"cep\": \"12200000\",\r\n    \"saveAddress\": true,\r\n    \"saveInfo\": true,\r\n    \"paymentMethod\": \"CardCredit\",\r\n    \"cardName\": \"Marcelo dos Santos\",\r\n    \"cardNumber\": \"123412341234\",\r\n    \"cardDate\": \"102030\",\r\n    \"cardCvv\": \"123\",\r\n    \"products\": [\r\n        \"Caderno\",\r\n        \"Caneta\",\r\n        \"PostIt\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/v1/checkout/",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"v1",
+						"checkout",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
